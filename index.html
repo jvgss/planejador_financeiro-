@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./imagens/Leonardo_Phoenix_Create_inspiring_images_of_money_with_soft_ca_0.jpg">
+    <title>💸 Simulador de Finanças - Comece a Investir!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>💰 Simulador de Finanças</h1>
+            <p class="intro">Descubra como guardar e investir seu dinheiro para conquistar seus sonhos! 🌟</p>
+            <button id="toggleDarkMode"><i class="fas fa-adjust"></i> Alternar Modo Escuro</button>
+        </header>
+
+        <form id="financeForm">
+            <div class="input-group">
+                <label for="income">Receita Mensal:</label>
+                <input type="text" id="income" required placeholder="Ex: R$ 1000,00" onfocus="this.placeholder=''" onblur="this.placeholder='Ex: R$ 1000,00'" >
+            </div>
+            <div class="input-group">
+                <label for="expense">Despesa Mensal:</label>
+                <input type="text" id="expense" required placeholder="Ex: R$ 800,00" onfocus="this.placeholder=''" onblur="this.placeholder='Ex: R$ 800,00'" >
+            </div>
+            <button type="submit"><i class="fas fa-calculator"></i> Calcular Agora!</button>
+        </form>
+
+        <div id="results" class="results"></div>
+
+        <div class="charts">
+            <canvas id="financeChart" class="chart" width="400" height="200"></canvas>
+            <canvas id="combinedChart" class="chart" width="400" height="200"></canvas>
+        </div>
+     
+        <!-- Nova seção de Dicas Financeiras -->
+        <div style=" padding-top: 30px;    text-align: center;"  class="financial-tips">
+            <h2>5 Dicas de Ouro do Homem Mais Rico da Babilônia 📚</h2>
+            <ul>
+                <li>1. "Comece a encher os seus bolsos!"💵</li>
+                <li>2. "Controle seus gastos!"📉</li>
+                <li>3. "Faça seu dinheiro trabalhar para você!"🚀 </li>
+                <li>4. "Proteja seu capital!"📖</li>
+                <li>5. "Aumente suas habilidades e conhecimentos!"🎯</li>
+            </ul>
+        </div>
+
+        <!-- Seção de Recomendações de Livros -->
+        <div style="padding-top: 30px;    text-align: center;" class="book-recommendations">
+            <h2>Recomendações de Livros 📖</h2>
+            <div class="book-card-container">
+                <div class="book-card">
+                    <h3>"O Homem Mais Rico da Babilônia"</h3>
+                    <p>- George S. Clason</p>
+                    <a href="https://www.amazon.com.br/Homem-Mais-Rico-Babil%C3%B4nia/dp/8595081530/ref=sr_1_1?crid=35D7YZB14XEJS&dib=eyJ2IjoiMSJ9.vr3cqICSg2vvyClkSpjR6egotiOmtdEIAtmamoHYbYkladRrDNkvp6BdCDqEybZgkXD7AKX4D0-cqO9PXMLFUiLynfb5xRW2e6OZ84p6upXF8hBnyIse5Z6E0cSqZu3-E2lSBU_xPzV77HEUrzU6VcjBr8wBu4WWgnDTzzznL1iJihqbp6ykhwrYJeTzbBVAPUYe0qaSGfXNLc6nIUbRgJqDlcrMwjpZ2cSprDmv9x3ssj0akFeraZgq0ypCggtHaR11a8wE86xZJ3vcQLhwN7Q92c7ZFvmuEDmtUOxclmk.7vNajn3XQM1RjLt4u-qUF9L5ubDhoXAdkMzOtkvEK6Y&dib_tag=se&keywords=livro+o+homem+mais+rico+da+babilonia&qid=1730217499&sprefix=homem+mais+rico+da+babilo%2Caps%2C309&sr=8-1" target="_blank" class="btn">Leia Mais</a>
+                </div>
+                <div class="book-card">
+                    <h3>"Pai Rico, Pai Pobre"</h3>
+                    <p>- Robert Kiyosaki</p>
+                    <a href="https://www.amazon.com.br/Pai-rico-pai-pobre-anos/dp/8550801488/ref=sr_1_1?crid=3IBKMJISBN60N&dib=eyJ2IjoiMSJ9.ECefj_MGpJLNSKF_aVBki_AsQBmnaHE6BPmB6wfYdEoo2IxjvktY2gDnIpTaQdQOdMiexTUkzs8xzUOHuQdKyn0w9s0wYpBSHGIsXkIINt4Xig_YaWqktDlhYW5ZC7JSFqBFRSubZDXMv1NkBFKmdCdvupZdDMRqM9s1b8c1ekGX4xzcd3PLx5zE0q1cIZKK9Dl-e8RFtaOq2GtLOwIY6bTTf-cHt9OlFmNH5EogV_86Nisya4uWaxysV_v3Mv90FUeJFug9Hxr4kq27e-SwKb915ZDlQ-oIUvyigZnQZ6c.AeDRaq3r_ShmAO_kxF-3dz-9Qkei6eCS7RJvJ0UjEAk&dib_tag=se&keywords=pai+rico+pai+pobre&qid=1730217570&sprefix=pai+%2Caps%2C287&sr=8-1" target="_blank" class="btn">Leia Mais</a>
+                </div>
+                <div class="book-card">
+                    <h3>"Os Segredos da Mente Milionária"</h3>
+                    <p>- T. Harv Eker</p>
+                    <a href="https://www.amazon.com.br/segredos-mente-milion%C3%A1ria-Harv-Eker/dp/8575422391/ref=sr_1_1?crid=3KI6VLJQVULU8&dib=eyJ2IjoiMSJ9.yK6XByU53boUTPtBVTBIY1RPMTY1f6E-kfeqnRHjDhyJSVi8hc0ubidRCliuRYWBhMAC4xRhi7Jxnet8D1D_mfXidfXZEbtBmEntxgTyeLPikZ465hhWSxvln0t0mRzCnTNhhcDFyzIEzBiHMEtz99cvu3qIPHc-j0fdDUpJyvGphyrOs-g_dQttauh80nYBEzZWVzNo5q3zyv6C1Ul0n2S2STECaJtgBRkq4c8wsqeKQu0XcBJRBte34PjqJao2sfftLLVRsYitgyHo3aRdtcJxtRpeEFQZF2FBBsLXy7Q.cn8z2vVlcvu_gK894899y3UCjxfvwIzEKj74DmOkM94&dib_tag=se&keywords=segredos+da+mente+milhonaria&qid=1730217628&sprefix=segredo%2Caps%2C244&sr=8-1" target="_blank" class="btn">Leia Mais</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="feedback">
+            <h2>Seu Feedback 📝</h2>
+            <form id="feedbackForm">
+                <textarea id="feedback" rows="4" placeholder="Compartilhe suas experiências ou sugestões..."></textarea>
+                <button type="submit">Enviar Feedback</button>
+            </form>
+        </div>
+
+    </div>
+    
+    <footer>
+        <p>Desenvolvido por João Vitor Gonçalves</p>
+        <p>Entre em contato:
+            <a href="https://www.linkedin.com/in/jo%C3%A3o-v%C3%ADtor-gon%C3%A7alves-soares-dos-santos-770373160/"
+                target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://wa.me/5511961271383" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

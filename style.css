@@ -1,0 +1,310 @@
+
+/* Estilo geral */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f4f8;
+    background-image: url(./imagens/Leonardo_Phoenix_A_vibrant_and_empowering_illustration_depicti_3.jpg);
+    margin: 0;
+    padding: 20px;
+    transition: background-color 0.3s;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Estilos de cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #2b2d42;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+.intro {
+    font-size: 1.2em;
+    color: #8d99ae;
+    transition: color 0.3s;
+}
+
+/* Estilos do formulário */
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #2b2d42;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #4caf50;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #2196F3;
+    outline: none;
+}
+
+/* Estilos do botão com ícones */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s, transform 0.3s;
+    display: flex; /* Flex para alinhar ícones e texto */
+    align-items: center; /* Alinha verticalmente */
+    justify-content: center; /* Alinha horizontalmente */
+}
+
+button i {
+    margin-right: 8px; /* Espaçamento entre ícone e texto */
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Estilos dos resultados */
+.results {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.results h3 {
+    color: #2b2d42;
+}
+
+/* Estilos dos gráficos */
+.charts {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.chart {
+    margin-bottom: 20px;
+}
+
+/* Estilos das metas financeiras */
+.goals {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #e0f7fa;
+    border-radius: 10px;
+}
+
+/* Estilos das dicas */
+.tips, .resources, .inspiration, .feedback {
+    margin: 20px 0;
+}
+
+.tips h2, .resources h2, .inspiration h2, .feedback h2 {
+    color: #2b2d42;
+    transition: color 0.3s;
+}
+
+/* Lista de dicas */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+/* Estilos do feedback */
+.feedback {
+    background-color: #e0f7fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #4caf50;
+    border-radius: 8px;
+    resize: none;
+    margin-bottom: 10px;
+    transition: border-color 0.3s;
+}
+
+textarea:focus {
+    border-color: #2196F3;
+    outline: none;
+}
+
+/* Estilos do modo escuro */
+body.dark-mode {
+    background-color: #121212;
+    background-image: url(./imagens/Leonardo_Phoenix_Create_a_stunning_black_and_white_image_featu_1.jpg);
+}
+
+.dark-mode .container {
+    background-color: #1e1e1e;
+    color: #f5f5f5;
+}
+
+.dark-mode h1,
+
+.dark-mode .intro,
+.dark-mode label,
+.dark-mode .results h3 {
+    color: #f5f5f5;
+}
+
+.dark-mode input,
+.dark-mode textarea {
+    background-color: #333;
+    color: #f5f5f5;
+    border-color: #555;
+}
+
+.dark-mode input:focus,
+.dark-mode textarea:focus {
+    border-color: #777;
+}
+
+.dark-mode button {
+    background-color: #5a5a5a;
+}
+
+.dark-mode button:hover {
+    background-color: #707070;
+}
+
+.container, button, input, textarea {
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+footer {
+    background-color: #004d40;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: white;
+    margin: 0 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+footer a:hover {
+    color: #f1c40f;
+}
+
+
+
+/* Estilos do botão com ícones */
+
+
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s, transform 0.3s;
+    display: flex; /* Flex para alinhar ícones e texto */
+    align-items: center; /* Alinha verticalmente */
+    justify-content: center; /* Alinha horizontalmente */
+}
+
+button i {
+    margin-right: 8px; /* Espaçamento entre ícone e texto */
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+.book-card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.book-card {
+    background: #f9f9f9;
+    background-size: cover;
+    background-image: url(./imagens/Default_A_sleek_and_modern_abstract_background_with_a_gradient_3.jpg);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px; /* Largura do card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.book-card:hover {
+    transform: scale(1.05);
+}
+
+.book-card h3 {
+    font-family: Montserrat;
+    font-size: 1.8em;
+    color: black;
+}
+
+.book-card p {
+    font-size: 1em;
+    color: black;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #4caf50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
