@@ -23,7 +23,7 @@ Clone o Repositório:
 bater
 
 Copiar código
-git clone https://github.com/seu_usuario/simulador-de-financas.git
+git clone https://github.com/jvgss/simulador-de-financas.git
 cd simulador-de-financas
 Abra o arquivo index.htmlem um navegador:
 
